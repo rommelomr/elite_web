@@ -573,7 +573,7 @@
             </v-stepper-content>
             <v-row>
               <v-col class="ml-8 mt-6">
-                 <p>Al finalizar su reserva usted indica estar de acuerdo con nuestros <a target="_blank" :href="terms_and_conditions_url">Terminos y condiciones</a>.</p>
+                 <p>Al finalizar su reserva usted indica estar de acuerdo con nuestros <a target="_blank" :href="terms_and_conditions_url">Terminos y condiciones</a> y con nuestra <a target="_blank" :href="privacy_policy_url">Política de privacidad</a>.</p>
                 <input id="agree_conditions" type="checkbox" v-model="agree_conditions"> <label for="agree_conditions">Estoy de acuerdo</label>
               </v-col>
             </v-row>
@@ -1129,6 +1129,11 @@
       terms_and_conditions_url(){
         return SPA('terminos_de_uso')
       },
+      
+      privacy_policy_url(){
+        return SPA('politicas_de_privacidad')
+      },
+
       reservation_price(){
         let date_one = new Date(this.first_date_input+'T'+this.first_time_input);
         let date_two = new Date(this.second_date_input+'T'+this.second_time_input);
