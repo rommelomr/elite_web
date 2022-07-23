@@ -65,7 +65,7 @@ export const WEB = (url) =>{
 }
 
 export const SPA = (url) =>{
-  return process.env.NODE_ENV === 'production' ? `https://eliteparking.es/${url}` : `http://localhost:8080/${url}`
+  return process.env.NODE_ENV === 'production' ? `https://eliteparking.es/${url}` : `http://localhost:8000/${url}`
 }
 
 

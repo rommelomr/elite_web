@@ -370,7 +370,7 @@
                 
                 <br>
 
-                <b><v-icon class="icon-color">mdi-map-marker</v-icon>Calle Playa de Riazor 14, 28042 Madrid, Barajas</b>
+                <b><v-icon class="icon-color">mdi-map-marker</v-icon>Calle Gumercindo Llorente 77, Madrid, 28022 de Madrid</b>
                 <br><br>
 
                 <a 

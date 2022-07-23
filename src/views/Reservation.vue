@@ -240,6 +240,8 @@
                     <v-select
                       v-model="document_type"
                       :items="document_types"
+                      item-text="name"
+                      item-value="id"
                       :rules="[
                         required(document_type)
                       ]"
@@ -787,16 +789,17 @@
 
           //Fill document types select
           this.document_types = arr;
-
+          console.log('Document types successfuly loaded');
+        
         }).catch(e=>{
 
           //Fill for test
           this.document_types = [
-            {text:'Type 1',value:1},
-            {text:'Type 2',value:2},
-            {text:'Type 3',value:3},
+            {name:'NIF',id:1},
+            {name:'NIE',id:2},
+            {name:'Pasaporte',id:3},
           ];
-          console.log(e);
+          console.log('error catched',e);
 
         });
       },

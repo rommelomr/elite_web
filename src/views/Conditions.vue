@@ -9,11 +9,11 @@
           
         <b>INFORMACIÓN GENERAL </b>
         <br><br>
-        El contrato tiene por objeto regular las condiciones generales de prestación de los servicios ofrecidos por Morpk69 S.L.U. a través de www.eliteparking.es del servicio de reservas telefónico, y a través de intermediarios como pueden ser las agencias de viajes u otros portales de Internet.
+        El contrato tiene por objeto regular las condiciones generales de prestación de los servicios ofrecidos por COMPANYGOLDWC S.L. a través de www.eliteparking.es del servicio de reservas telefónico, y a través de intermediarios como pueden ser las agencias de viajes u otros portales de Internet.
         <br><br>
         <b>IDENTIFICACIÓN DE LAS PARTES CONTRATANTES</b>
         <br><br>
-        Las presentes Condiciones Generales de Contrato y Servicio ofrecido por Elite Parking son suscritas de una parte, por la entidad Sociedad Morpk69, S.L.U. CIF B02644169 con domicilio en Calle Nuestra Señora de Guadalupe 18 28028, Madrid – Madrid. Y, de otra parte, el cliente (en adelante, el "CLIENTE"), persona física que ha podido realizar la reserva por distintos medios y que cede la responsabilidad del vehículo a Elite Parking en el momento de formalizar el contrato.
+        Las presentes Condiciones Generales de Contrato y Servicio ofrecido por Elite Parking son suscritas de una parte, por la entidad COMPANYGOLDWC S.L B10618544 con domicilio en Calle Isabelita Usera 84. P2a. Y, de otra parte, el cliente (en adelante, el "CLIENTE"), persona física que ha podido realizar la reserva por distintos medios y que cede la responsabilidad del vehículo a Elite Parking en el momento de formalizar el contrato.
         <br><br>
         <b>CONDICIONES DE USO Y RESPONSABILIDADES DEL CLIENTE</b>
         <br><br>
@@ -29,7 +29,7 @@
         <br><br>
         <b>DEVOLUCIÓN</b>
         <br><br>
-        La modificación de horarios y/o vuelos sin aviso previo puede suponer esperas de hasta 2 horas y/o recargos en el importe final. Si la devolución del vehículo es posterior a las 3 horas fijadas para su entrega. Se abonará el importe correspondiente a un día de estancia por nocturnidad. Debido a la concentración de ondas electromagnéticas y radiofrecuencias en la zona aeroportuaria y estaciones de tren no nos hacemos responsables del mal funcionamiento de GPS, llaves y mandos de coches, alarmas, inmovilizadores y otros dispositivos electrónicos. Después de la retirada del vehículo por parte del CLIENTE Elite Parking no admite reclamaciones del estado del vehículo, de los servicios extras realizados y del pago en metálico, no obstante en nuestro afán por ofrecer al cliente el mejor servicio cualquier  duda  será  atendida  por  correo  electrónico reclamaciones@eliteparking.es o   llamando  al   teléfono 910 94 57 30 o por correo ordinario a C/ Nuestra Señora de Guadalupe,18 - Madrid, 28028 de Madrid.
+        La modificación de horarios y/o vuelos sin aviso previo puede suponer esperas de hasta 2 horas y/o recargos en el importe final. Si la devolución del vehículo es posterior a las 3 horas fijadas para su entrega. Se abonará el importe correspondiente a un día de estancia por nocturnidad. Debido a la concentración de ondas electromagnéticas y radiofrecuencias en la zona aeroportuaria y estaciones de tren no nos hacemos responsables del mal funcionamiento de GPS, llaves y mandos de coches, alarmas, inmovilizadores y otros dispositivos electrónicos. Después de la retirada del vehículo por parte del CLIENTE Elite Parking no admite reclamaciones del estado del vehículo, de los servicios extras realizados y del pago en metálico, no obstante en nuestro afán por ofrecer al cliente el mejor servicio cualquier  duda  será  atendida  por  correo  electrónico reclamaciones@eliteparking.es o llamando al teléfono 910 94 57 30 o por correo ordinario a Calle Isabelita Usera 84. P2a.
       </v-card-text>
       
     </v-card>

@@ -5,7 +5,7 @@
 
         <v-card>
           <v-card-title class="justify-center">
-            <h1 class="montserrat-title">Términos y condiciones generales del contrato y uso del servicio</h1>
+            <h1 class="montserrat-title">Términos y condiciones generales del contrato y uso del servicioooo</h1>
           </v-card-title>
         </v-card>
         <br>  
@@ -14,11 +14,11 @@
           <v-card-text>
             
             <p class="justify"><b>1. INFORMACIÓN GENERAL </b></p>
-            <p class="justify">El contrato tiene por objeto regular las condiciones generales de prestación de los servicios ofrecidos por Morpk69 S.L.U. a través de www.eliteparking.es del servicio de reservas telefónico, y a través de intermediarios como pueden ser las agencias de viajes u otros portales de Internet.</p>
+            <p class="justify">El contrato tiene por objeto regular las condiciones generales de prestación de los servicios ofrecidos por COMPANYGOLDWC S.L B10618544. a través de www.eliteparking.es del servicio de reservas telefónico, y a través de intermediarios como pueden ser las agencias de viajes u otros portales de Internet.</p>
 
             <p class="justify"><b>2. IDENTIFICACIÓN DE LAS PARTES CONTRATANTES</b></p>
 
-            <p class="justify">Las presentes Condiciones Generales de Contrato y Servicio ofrecido por Elite Parking son suscritas de una parte, por la entidad Sociedad Morpk69, S.L.U. CIF B02644169 con domicilio en Calle Nuestra Señora de Guadalupe 18 28028, Madrid – Madrid. Y, de otra parte, el cliente (en adelante, el "CLIENTE"), persona física que ha podido realizar la reserva por distintos medios y que cede la responsabilidad del vehículo a Elite Parking en el momento de formalizar el contrato.</p> 
+            <p class="justify">Las presentes Condiciones Generales de Contrato y Servicio ofrecido por Elite Parking son suscritas de una parte, por la entidad COMPANYGOLDWC S.L B10618544. CIF B02644169 con domicilio en Calle Isabelita Usera 84. P2a. Madrid – Madrid. Y, de otra parte, el cliente (en adelante, el "CLIENTE"), persona física que ha podido realizar la reserva por distintos medios y que cede la responsabilidad del vehículo a Elite Parking en el momento de formalizar el contrato.</p> 
 
 
             <p class="justify"><b>3. CONDICIONES DE USO Y RESPONSABILIDADES DEL CLIENTE</b></p>
@@ -54,11 +54,11 @@
 
             <p class="justify"><b>6. DEVOLUCIÓN</b></p>
 
-            <p class="justify">La modificación de horarios y/o vuelos sin aviso previo puede suponer esperas de hasta 2 horas y/o recargos en el importe final. Si la devolución del vehículo es posterior a las 3 horas fijadas para su entrega. Se abonará el importe correspondiente a un día de estancia por nocturnidad. Debido a la concentración de ondas electromagnéticas y radiofrecuencias en la zona aeroportuaria y estaciones de tren no nos hacemos responsables del mal funcionamiento de GPS, llaves y mandos de coches, alarmas, inmovilizadores y otros dispositivos electrónicos. Después de la retirada del vehículo por parte del CLIENTE Elite Parking no admite reclamaciones del estado del vehículo, de los servicios extras realizados y del pago en metálico, no obstante, en nuestro afán por ofrecer al cliente el mejor servicio cualquier duda será atendida por correo electrónico reclamaciones@eliteparking.es o llamando al teléfono 910 94 57 30 o por correo ordinario a C/ Nuestra Señora de Guadalupe,18 - Madrid, 28028 de Madrid.</p> 
+            <p class="justify">La modificación de horarios y/o vuelos sin aviso previo puede suponer esperas de hasta 2 horas y/o recargos en el importe final. Si la devolución del vehículo es posterior a las 3 horas fijadas para su entrega. Se abonará el importe correspondiente a un día de estancia por nocturnidad. Debido a la concentración de ondas electromagnéticas y radiofrecuencias en la zona aeroportuaria y estaciones de tren no nos hacemos responsables del mal funcionamiento de GPS, llaves y mandos de coches, alarmas, inmovilizadores y otros dispositivos electrónicos. Después de la retirada del vehículo por parte del CLIENTE Elite Parking no admite reclamaciones del estado del vehículo, de los servicios extras realizados y del pago en metálico, no obstante, en nuestro afán por ofrecer al cliente el mejor servicio cualquier duda será atendida por correo electrónico reclamaciones@eliteparking.es o llamando al teléfono 910 94 57 30 o por correo ordinario a Calle Isabelita Usera 84. P2a - Madrid, Madrid.</p> 
 
             <p class="justify"><b>7. PAGO</b></p>
 
-            <p class="justify">MORPK69 S.L. cobrará al CLIENTE por la prestación del servicio, en virtud de las tarifas vigentes en cada momento en el PORTAL y que aparecerán una vez seleccionados las fechas, horario, lugar y servicio correspondiente. Una vez que se formalice la reserva, ésta quedará en la base de datos de MORPK69 S.L, con el importe asignado, enviando una copia al SOLICITANTE de la misma. El pago de la reserva de los clientes que realicen su reserva a través del PORTAL o vía telefónica, se efectuarán en metálico o con tarjeta de crédito en el momento de la devolución del vehículo. Los cambios en el servicio que se pudieran ocasionar, como pueden ser ampliaciones de estancia o contratación de otros servicios entre otros, serán cobrados aparte al CLIENTE, en el momento de la devolución de su vehículo. MORPK69 S.L, no se hace responsable de los pagos efectuados a intermediarios y de sus políticas de devolución y cancelación, por lo que declina cualquier responsabilidad al respecto.</p>
+            <p class="justify">COMPANYGOLDWC S.L. cobrará al CLIENTE por la prestación del servicio, en virtud de las tarifas vigentes en cada momento en el PORTAL y que aparecerán una vez seleccionados las fechas, horario, lugar y servicio correspondiente. Una vez que se formalice la reserva, ésta quedará en la base de datos de COMPANYGOLDWC S.L, con el importe asignado, enviando una copia al SOLICITANTE de la misma. El pago de la reserva de los clientes que realicen su reserva a través del PORTAL o vía telefónica, se efectuarán en metálico o con tarjeta de crédito en el momento de la devolución del vehículo. Los cambios en el servicio que se pudieran ocasionar, como pueden ser ampliaciones de estancia o contratación de otros servicios entre otros, serán cobrados aparte al CLIENTE, en el momento de la devolución de su vehículo. COMPANYGOLDWC S.L, no se hace responsable de los pagos efectuados a intermediarios y de sus políticas de devolución y cancelación, por lo que declina cualquier responsabilidad al respecto.</p>
 
             <p class="justify"><b>8. RESPONSABILIDADES DEL COMERCIO ONLINE</b></p>
 
