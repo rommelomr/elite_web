@@ -3,14 +3,17 @@
     <v-card>
       <v-card-title class="justify-center">
 
-          Reserva guardada exitosamente        
+          Reserva registrada exitosamente
 
       </v-card-title>
       <v-card-text>
 
         <center>
-          <p>Los datos de su reserva han sido enviados a la dirección de correo especificada.</p>
+          <p>Los datos de su reserva han sido enviados a la dirección de correo especificada.</p><br>
 
+          <p>IMPORTANTE</p>
+          <p>Recuerde que la recepción y devolución de coches entre la <u>1:00 am y las 5:00 am</u><br> conlleva un recargo en la tarifa de un día de servicio.</p>
+          <br>
           <p><b>Datos de la reserva:</b></p>
         </center>
         <v-row>
@@ -57,7 +60,7 @@
               outlined
               @click="$router.push('/')"
             >
-              Finalizar
+              Ir al inicio
             </v-btn>
           </v-col>
         </v-row>
@@ -105,7 +108,7 @@
 
       }
       
-      if(!this.stored_reservation_setted){
+      if(!this.stored_reservation_setted && process.env.NODE_ENV === 'production'){
 
         this.$router.push('/');
       }else{

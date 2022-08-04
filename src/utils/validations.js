@@ -5,6 +5,12 @@ export const validateOnlyLyrics = (string)=>{
 	return patt.test(string);
 
 }
+export const validateNotEmpty = (string)=>{
+	for(let i = 0; i < string.length; i++){
+		if(string[i] != ' ') return true;
+	}
+	return false;
+}
 export const validateLyricsAndNumbers = (string)=>{
 
 	let patt = /^[a-zA-Z0-9nÑ]+$/;
@@ -19,7 +25,7 @@ export const validateLyricsNumbersAndSpaces = (string)=>{
 }
 export const validatePhone = (string)=>{
 
-	let patt = /^[0-9()+ ]+$/;
+	let patt = /^[0-9()+\- ]+$/;
 	return patt.test(string);
 
 }

@@ -445,7 +445,11 @@
                       ref="flight_number"
                       v-model="flight_number"
                       label="N° de vuelo de regreso"
-                      required
+                      :rules="[
+                        required(devolution_terminal),
+                        validateFlightNumber()
+
+                      ]"
                     >
                       
                     </v-text-field>
@@ -612,12 +616,15 @@
 <script>
   
   import {
-    validateLyricsAndNumbers,
-    validateLyricsNumbersAndSpaces,
-    validateOnlyLyrics,
+    /*
+      validateLyricsAndNumbers,
+      validateLyricsNumbersAndSpaces,
+      validatePlaque,
+      validateOnlyLyrics,
+    */
     validatePhone,
     existsInArray,
-    validatePlaque,
+    validateNotEmpty,
     validateEmail
   } from '../utils/validations.js';
 
@@ -644,21 +651,24 @@
       
       this.valid_url = this.validateDates(this.url_date_one,this.url_date_two,this.today_date)
         && this.validateTerminals(this.$route.query.reception_terminal,this.$route.query.devolution_terminal);
-        
-      if(this.valid_url){
-        
-        this.first_date_input = this.$route.query.date_one;
-        this.first_time_input = this.$route.query.time_one;
 
-        this.second_date_input = this.$route.query.date_two;
-        this.second_time_input = this.$route.query.time_two;
+      if(process.env.NODE_ENV === 'production'){
 
-        this.reception_terminal = this.reception_terminals[this.$route.query.reception_terminal-1].value;
-        this.devolution_terminal = this.devolution_terminals[this.$route.query.devolution_terminal-1].value;
-        
-      }else{
-        
-        this.$router.push('/');
+        if(this.valid_url){
+          
+          this.first_date_input = this.$route.query.date_one;
+          this.first_time_input = this.$route.query.time_one;
+  
+          this.second_date_input = this.$route.query.date_two;
+          this.second_time_input = this.$route.query.time_two;
+  
+          this.reception_terminal = this.reception_terminals[this.$route.query.reception_terminal-1].value;
+          this.devolution_terminal = this.devolution_terminals[this.$route.query.devolution_terminal-1].value;
+          
+        }else{
+          
+          this.$router.push('/');
+        }
       }
 
       this.setTerminals();
@@ -837,23 +847,23 @@
             
             this.axios.post(API('save_reservation'),{
 
-              first_date_input : this.first_date_input,
-              first_time_input : this.first_time_input,
-              second_date_input : this.second_date_input,
-              second_time_input : this.second_time_input,
+              first_date_input: this.first_date_input,
+              first_time_input: this.first_time_input,
+              second_date_input: this.second_date_input,
+              second_time_input: this.second_time_input,
 
-              client_full_name : this.client_full_name,
-              client_phone : this.client_phone,
-              client_email : this.client_email,
-              client_document_number : this.client_document_number,
-              plaque : this.plaque,
-              brand : this.brand,
-              model : this.model,
-              color : this.color,
-              invoice : this.invoice,
-              luggage : this.luggage,
-              observation : this.observation,
-              flight_number : this.flight_number,
+              client_full_name: this.client_full_name,
+              client_phone: this.client_phone,
+              client_email: this.client_email,
+              client_document_number: this.client_document_number,
+              plaque: this.plaque,
+              brand: this.brand,
+              model: this.model,
+              color: this.color,
+              invoice: this.invoice,
+              luggage: this.luggage,
+              observation: this.observation,
+              flight_number: this.flight_number,
               document_type: this.document_type,
               reception_terminal: this.reception_terminal,
               devolution_terminal: this.devolution_terminal,
@@ -902,17 +912,17 @@
                   }
 
                 }else{
+
                   this.submit_disabled = false;
-                  //this.snackbar_text = Object.values(response.data.messages[0])[0][0];
-                  this.snackbar = true;
                   
                 }
             }).catch((e) => {
               console.log(e.response)
               this.snackbar_text = "Ha ocurrido un error. Por favor intentelo de nuevo mas tarde";
               this.snackbar = true;
-            });
+            }).finally(()=>{
               this.submit_disabled = false;
+            });
 
           }else{
 
@@ -1037,17 +1047,17 @@
       },
       validatePlaque(){
 
-        return validatePlaque(this.plaque) || 'La Matrícula no tiene un formato válido';
+        return validateNotEmpty(this.plaque) || 'Este campo no puede estar vacío';
 
       },
       validateBrand(){
 
-        return validateLyricsNumbersAndSpaces(this.brand)  || 'La marca debe contener solo letras y números';
+        return validateNotEmpty(this.brand)  || 'Este campo no puede estar vacío';
 
       },
       validateModel(){
 
-        return validateLyricsNumbersAndSpaces(this.model) || 'El modelo debe contener solo letras y números';
+        return validateNotEmpty(this.model) || 'Este campo no puede estar vacío';
       },
       setNullable(value,response){
 
@@ -1060,25 +1070,26 @@
       },
       validateColor(){
         
-        return this.setNullable(this.color,(validateOnlyLyrics(this.color) || 'El color debe contener solo letras'));
+        return validateNotEmpty(this.color) || 'Este campo no puede estar vacío';
 
       },
 
       validateFlightNumber(){
 
-        let patt = /^[\w- ]+$/;
-        return this.setNullable(this.flight_number, patt.test(this.flight_number) || 'El número de vuelo no es válido');
+        //let patt = /^[\w- ]+$/;
+        //return this.setNullable(this.flight_number, patt.test(this.flight_number) || 'El número de vuelo no es válido');
+        return validateNotEmpty(this.flight_number) || 'Este campo no puede estar vacío';
 
       },
 
       validateFullName(){
 
-        return validateOnlyLyrics(this.client_full_name) || 'Este campo debe tener solo letras y espacios';
+        return validateNotEmpty(this.client_full_name) || 'Este campo no puede estar vacío';
         
       },
       validateTelephone(){
 
-        return validatePhone(this.client_phone) || 'Este campo debe contener solo números, paréntesis, y/o el símbolo +.';
+        return (validateNotEmpty(this.client_phone) && validatePhone(this.client_phone)) || 'Este campo debe contener solo números, paréntesis, y/o los símbolos + y -. No puede estar vacío.';
         
       },
       validateEmail(){
@@ -1088,8 +1099,8 @@
       },
       validateDocumentNumber(){
 
-        return validateLyricsAndNumbers(this.client_document_number) || 'Este campo debe contener solo números y letras';
-        
+        return validateNotEmpty(this.client_document_number) || 'Este campo no puede estar vacío';
+
       },
 
       validateReceptionTerminal(){
@@ -1104,7 +1115,7 @@
       },
       validateCity(){
 
-        return this.setNullable(this.city, (validateOnlyLyrics(this.city) || 'La ciudad escrita tiene caracteres inválidos') );
+        return validateNotEmpty(this.city) || 'Este campo no puede estar vacío';
 
       },
 
@@ -1180,7 +1191,7 @@
 
     },
     data: ()=>({
-      agree_conditions:false,
+      agree_conditions: process.env.NODE_ENV === 'production' ? false : true,
       submit_disabled:false,
       snackbar:false,
       snackbar_text:'init',
@@ -1197,11 +1208,11 @@
 
       //Datos de recogida y devolucion
 
-      first_date_input: null,
-      first_time_input: null,
+      first_date_input: process.env.NODE_ENV === 'production' ? null : '2030-10-10',
+      first_time_input: process.env.NODE_ENV === 'production' ? null : '23:56',
 
-      second_date_input: null,
-      second_time_input: null,
+      second_date_input: process.env.NODE_ENV === 'production' ? null : '2030-12-12',
+      second_time_input: process.env.NODE_ENV === 'production' ? null : '23:57',
 
       date_one: null,
       date_two: null,
@@ -1209,38 +1220,38 @@
       time_one: null,
       time_two: null,
       
-      client_full_name:null,
-      client_phone:null,
-      client_email:null,
+      client_full_name: process.env.NODE_ENV === 'production' ? '' : 'Rommél 123',
+      client_phone: process.env.NODE_ENV === 'production' ? '' : '+57 (333) 444 - 555',
+      client_email: process.env.NODE_ENV === 'production' ? null : 'rommelmontoya97@gmail.com',
 
-      client_document_number:null,
+      client_document_number: process.env.NODE_ENV === 'production' ? '' : '333444555666',
 
-      plaque:null,
-      brand:null,
-      model:null,
-      color:null,
+      plaque: process.env.NODE_ENV === 'production' ? '' : 'rommél 123',
+      brand:  process.env.NODE_ENV === 'production' ? '' : 'rommél 123',
+      model:  process.env.NODE_ENV === 'production' ? '' : 'rommél 123',
+      color:  process.env.NODE_ENV === 'production' ? '' : 'rommél 123',
 
       invoice:false,
       luggage:false,
-      observation:'',
-      flight_number:null,
+      observation: process.env.NODE_ENV === 'production' ? '' : 'Rommél 123',
+      flight_number: process.env.NODE_ENV === 'production' ? '' : 'rommél 123',
 
       document_types:[],
-      document_type:null,
+      document_type: process.env.NODE_ENV === 'production' ? null : 1,
       
       reception_terminals:[],
-      reception_terminal: '',
+      reception_terminal:  process.env.NODE_ENV === 'production' ? '' : 1,
 
       devolution_terminals:[],
-      devolution_terminal: '',
+      devolution_terminal:  process.env.NODE_ENV === 'production' ? '' : 1,
 
       service:null,
       services_info:[],
       services_select:[],
 
-      city:null,
+      city:  process.env.NODE_ENV === 'production' ? '' : 'Rommél tesr',
 
-      e6:2
+      e6: process.env.NODE_ENV === 'production' ? 2 : 1
 
     })
   }

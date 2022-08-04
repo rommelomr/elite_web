@@ -134,7 +134,6 @@
                       {{dates_setted_text}}
                         
                     </p>
-
                   </center>
                 </div>
               </v-card-text>
@@ -145,7 +144,7 @@
                     depressed
                     elevation="1"
                     outlined
-                  >Reservar</v-btn>                
+                  >Reservar</v-btn>
               </v-card-actions>
 
           </v-card>
@@ -424,94 +423,8 @@
       devolution_hour:null,
       devolution_minute:null,
 
-      hours: ['00',
-        '01',
-        '02',
-        '03',
-        '04',
-        '05',
-        '06',
-        '07',
-        '08',
-        '09',
-        '10',
-        '11',
-        '12',
-        '13',
-        '14',
-        '15',
-        '16',
-        '17',
-        '18',
-        '19',
-        '20',
-        '21',
-        '22',
-        '23',
-
-
-      ],
-      minutes: ['00',
-        '01',
-        '02',
-        '03',
-        '04',
-        '05',
-        '06',
-        '07',
-        '08',
-        '09',
-        '10',
-        '11',
-        '12',
-        '13',
-        '14',
-        '15',
-        '16',
-        '17',
-        '18',
-        '19',
-        '20',
-        '21',
-        '22',
-        '23',
-        '24',
-        '25',
-        '26',
-        '27',
-        '28',
-        '29',
-        '30',
-        '31',
-        '32',
-        '33',
-        '34',
-        '35',
-        '36',
-        '37',
-        '38',
-        '39',
-        '40',
-        '41',
-        '42',
-        '43',
-        '44',
-        '45',
-        '46',
-        '47',
-        '48',
-        '49',
-        '50',
-        '51',
-        '52',
-        '53',
-        '54',
-        '55',
-        '56',
-        '57',
-        '58',
-        '59',
-      ],
+      hours: ['00','05','06','07','08','09','10','11','12','13','14','15','16','17','18','19','20','21','22','23',],
+      minutes: ['00','01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59',],
       
       snackbar: false,
 
@@ -545,8 +458,7 @@
 
     }),
     mounted(){
-      console.log(this.$route)
-      this.$gtag.event('Pagina web', { method: 'Google' })
+
       if(this.$route.hash != ""){
         
         this.$vuetify.goTo(this.$route.hash);
@@ -636,7 +548,7 @@
           && date_two.getTime() > date_one.getTime()
           && date_one.getTime() >= today_date.getTime()){
           let diff_time = Math.abs(date_two - date_one);  
-          let diff_days = Math.ceil(diff_time / (1000 * 60 * 60 * 24)); 
+          let diff_days = Math.ceil(diff_time / (1000 * 60 * 60 * 24));
           this.showPrice(diff_days);
 
          return true;
@@ -655,8 +567,9 @@
         
         if(days > 31){
 
-          this.price = (parseFloat(this.prices[31]) + ((days - 31)*this.prices[32]));
-
+          let thirty_one_days_price = parseFloat(this.prices[31]);
+          let days_out_of_month_price = (days - 31) * this.prices[32];
+          this.price = thirty_one_days_price + days_out_of_month_price;
           this.dates_setted_text = this.price +' €';
 
         }else{

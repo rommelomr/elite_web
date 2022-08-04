@@ -42,7 +42,6 @@
 
             <p class="justify">Elite Parking tampoco se hace responsable de todo lo que no le cubra su seguro.</p>
 
-
             <p class="justify"><b>5. SEGURO</b></p>
 
             <p class="justify">La estancia de su vehículo está cubierta por nuestro seguro de daños y responsabilidad civil de acuerdo a la Ley de Guarda y Custodia de Aparcamientos 40/2002. Ante un eventual accidente en circulación, causado por un tercero, será este quien cubra los daños ocasionados al vehículo. Lo anterior en aplicabilidad de la Ley de Seguros Obligatorios y Responsabilidad Civil vigentes.</p> 
@@ -55,6 +54,8 @@
             <p class="justify"><b>6. DEVOLUCIÓN</b></p>
 
             <p class="justify">La modificación de horarios y/o vuelos sin aviso previo puede suponer esperas de hasta 2 horas y/o recargos en el importe final. Si la devolución del vehículo es posterior a las 3 horas fijadas para su entrega. Se abonará el importe correspondiente a un día de estancia por nocturnidad. Debido a la concentración de ondas electromagnéticas y radiofrecuencias en la zona aeroportuaria y estaciones de tren no nos hacemos responsables del mal funcionamiento de GPS, llaves y mandos de coches, alarmas, inmovilizadores y otros dispositivos electrónicos. Después de la retirada del vehículo por parte del CLIENTE Elite Parking no admite reclamaciones del estado del vehículo, de los servicios extras realizados y del pago en metálico, no obstante, en nuestro afán por ofrecer al cliente el mejor servicio cualquier duda será atendida por correo electrónico reclamaciones@eliteparking.es o llamando al teléfono 910 94 57 30 o por correo ordinario a Calle Isabelita Usera 84. P2a - Madrid, Madrid.</p> 
+
+            <p class="justify">IMPORTANTE: la recepción y devolución de coches entre la <u>1:00 am y las 5:00 am</u> conlleva un recargo en la tarifa de un día de servicio.</p>
 
             <p class="justify"><b>7. PAGO</b></p>
 

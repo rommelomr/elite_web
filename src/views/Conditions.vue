@@ -30,6 +30,7 @@
         <b>DEVOLUCIÓN</b>
         <br><br>
         La modificación de horarios y/o vuelos sin aviso previo puede suponer esperas de hasta 2 horas y/o recargos en el importe final. Si la devolución del vehículo es posterior a las 3 horas fijadas para su entrega. Se abonará el importe correspondiente a un día de estancia por nocturnidad. Debido a la concentración de ondas electromagnéticas y radiofrecuencias en la zona aeroportuaria y estaciones de tren no nos hacemos responsables del mal funcionamiento de GPS, llaves y mandos de coches, alarmas, inmovilizadores y otros dispositivos electrónicos. Después de la retirada del vehículo por parte del CLIENTE Elite Parking no admite reclamaciones del estado del vehículo, de los servicios extras realizados y del pago en metálico, no obstante en nuestro afán por ofrecer al cliente el mejor servicio cualquier  duda  será  atendida  por  correo  electrónico reclamaciones@eliteparking.es o llamando al teléfono 910 94 57 30 o por correo ordinario a Calle Isabelita Usera 84. P2a.
+        <p class="justify">IMPORTANTE: la recepción y devolución de coches entre la <u>1:00 am y las 5:00 am</u> conlleva un recargo en la tarifa de un día de servicio.</p>
       </v-card-text>
       
     </v-card>
